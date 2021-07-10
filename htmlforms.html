@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML REGISTRATION</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <form name="signin" action="/signin.aspx" target="_blank" method="POST">
+        <fieldset>
+            <legend>STUDENT INFORMATION</legend>
+            <label for="first name">firstname</label>
+            <input type="text" name="firstname" id="firstname" value="RAVI" ><br><br>
+            <label for="lastname">lastname</label>
+            <input type="text" name="lastname" id="lastname "  size="10"><br><br>
+            <label for="age">age</label>
+            <input type="number" name="age" id="name"><br><br>
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" minlength="8"><br><br>
+            <label for="gender">gender</label><br>
+            <input type="radio" name="gender" id="male">MALE<br>
+            <input type="radio" name="gender" id="female">FEMALE<br>
+            <input type="radio" name="gender" id="others">OTHERS<br>
+        </fieldset>
+        <label for="date of birth">DATE OF BIRTH</label>
+        <input type="date" name="DATE OF BIRTH" id="date of birth">DATE OF BIRTH<br>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email">email<br>
+        <label for="languages known">languages</label><br>
+        <input type="checkbox" name="languages" id="telugu">TELUGU<br>
+        <input type="checkbox" name="languages" id="hindi">HINDI<br>
+        <input type="checkbox" name="languages" id="english">ENGLISH<br>
+        <label for="computerlanguages known">computerlanguages</label><br>
+        <input type="checkbox" name="languages" id="c">C <br><br>
+        <input type="checkbox" name="languages" id="C++">C++<br><br>
+        <input type="checkbox" name="languages" id="JAVA">JAVA<br><br>
+        <input type="checkbox" name="languages" id="HTML">HTML<br><br>
+        <label for="discription">discription</label>
+        <textarea rows="10" cols="80"></textarea><br><br>
+        <label for="education qualifiacation">EDUCATION QUALIFICATION</label><br><br>
+        <select id="education qualifaction" name="education qualification">
+            <option value="select education details">education details</option><br><br>
+            <option value="ssc">ssc</option><br><br>
+            <option value="intermediate">intermediate</option><br><br>
+            <option value="b.tech">b.tech</option><br><br>
+        </select><br><br>
+        <label for="favarote color">favarote color</label>
+        <input type="color" name="favarote color" id="favarote color"><br><br>
+        <label for="photo">photo</label>
+        <input type="file" name="photo" id="photo" accept="image/*"><br><br>
+        <label for="document"> document</label>
+        <input type="file" name="document" id="document" accept=".doc*"><br><br>
+        <input type="submit" name="submit" id="submit">
+        <input type="reset" name="reset" id="reset">
+
+
+    </form>
+</body>
+
+</html>

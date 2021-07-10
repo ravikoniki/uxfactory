@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Forms</title>
+  </head>
+  <body>
+      <form name="SignIn" action="/signin.aspx" method="POST">
+        <fieldset>
+         <legend>Employee Registration</legend>
+         <label for="fname">First name:</label>
+         <input type="text" id="fname" name="fname" placeholder="Please enter firstname" size="50"><br><br>
+         <label for="lastname">Last name:</label>
+         <input type="text" id="lastname" name="lastname" value="Kalyan" readonly><br><br>
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password"><br><br>
+         <label>Gender:</label>
+         <input type="radio" id="male" name="gender" value="male">
+         <label for="male">Male</label>
+         <input type="radio" id="female" name="gender" value="female">
+         <label for="female">Female</label>
+         <input type="radio" id="others" name="gender" value="others">
+         <label for="others">Others</label><br><br>
+         <label for="website">Website:</label>
+         <input type="url" name="website" id="website"/><br><br>
+         <label for="email">Email:</label>
+         <input type="email" name="email" id="email"/><br><br>
+         <label for="Rank">Rank:</label>
+         <input type="number" name="rank" id="rank"/><br><br>
+         <label>Language: </label>
+         <input type="checkbox" id="language1" name="language1" value="english" />
+         <label for='language1'>I can speak English</label>
+         <input type="checkbox" id="language2" name="language2" value="hindi" />
+         <label for='language2'>I can speak Hindi</label>
+         <input type="checkbox" id="language3" name="language3" value="telugu" />
+         <label for='language3'>I can speak Telugu</label><br><br>
+         <label for="jobdescription">Job Description: </label>
+         <textarea id="jobdescription" name="jobdescription" rows="10" cols="50" placeholder="Please enter Job description in detail"></textarea><br><br>
+         <label for="mobilebrands">Choose a mobile:</label>
+         <select id="mobilebrands" name="mobilebrands" size="3" multiple> 
+            <option value="Iphone">Apple Iphone</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Oneplus">Oneplus</option>
+            <option value="Pixel">Pixel</option>
+            <option value="Nokia">Nokia</opton>
+            <option value="RealMe">RealMe</option>
+         </select><br><br>
+         <label for="photo">Upload Photo:</label>
+         <input type="file" id="photo" name="photo"/><br><br>
+         <label for="resume">Upload Resume:</label>
+         <input type="file" id="resume" name="resume"/><br><br>
+         <label for="birthday">Birthday: </label>
+         <input type="date" id="birthday" name="birthday"/><br><br>
+         <label for="favcolor">Select your favourite color:</label>
+         <input type="color" id="favcolor" name="favcolor"/><br><br>
+         <input type="hidden" name="userid" value="500"/>
+         <input type="submit" name="Submit" value="Click Me!" />
+         <input type="reset"/><br><br>
+        </fieldset>
+      </form><br><br><br><br>
+
+      <form>
+        <fieldset>
+         <legend>Student Information1</legend>
+         <label for="fname">First name:</label>
+         <input type="text" id="fname" name="fname"><br><br>
+         <label for="lastname">Last name:</label>
+         <input type="text" id="lastname" name="lastname"><br><br>
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password"><br><br>
+         <label>Gender:</label>
+         <input type="radio" id="male" name="gender" value="male">
+         <label for="male">Male</label>
+         <input type="radio" id="female" name="gender" value="female">
+         <label for="female">Female</label>
+         <input type="radio" id="others" name="gender" value="others">
+         <label for="others">Others</label><br><br>
+         <input type="button" name="Submit" value="Submit Student Info" /><br><br>
+        </fieldset>
+      </form><br><br><br><br>
+
+      <form>
+        <fieldset>
+         <legend>Employee Information</legend>
+         <label for="fname">First name:</label>
+         <input type="text" id="fname" name="fname"><br><br>
+         <label for="lastname">Last name:</label>
+         <input type="text" id="lastname" name="lastname"><br><br>
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password"><br><br>
+         <label>Gender:</label>
+         <input type="radio" id="male" name="gender" value="male">
+         <label for="male">Male</label>
+         <input type="radio" id="female" name="gender" value="female">
+         <label for="female">Female</label>
+         <input type="radio" id="others" name="gender" value="others">
+         <label for="others">Others</label><br><br>
+         <input type="button" name="Submit" value="Submit Employee Info" /><br><br>
+        </fieldset>
+      </form>
+  </body>
+</html>
