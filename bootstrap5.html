@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> bootstrap validation</title>
+  <link rel="stylesheet" href="../css/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css">
+  <script src="../css/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+  <style>
+    .class {
+      background-color: teal;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="class">
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4" ba>
+        <label for="validationCustom01" class="form-label">First name</label>
+        <input type="text" class="form-control" id="validationCustom01">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Last name</label>
+        <input type="text" class="form-control" id="validationCustom02">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label">Username</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+            required>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom03" class="form-label">City</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          Please provide a valid city.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom04" class="form-label">State</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Choose...</option>
+          <option value="andhra-pradesh">ANDHRA-PRADESH</option>
+          <option value="arunachal-pradesh">ARUNACHAL-PRADESH</option>
+          <option value="assam">ASSAM</option>
+          <option value="bihar">BIHAR</option>
+          <option value="chattisgarh">CHATTISGARH</option>
+          <option value="goa">GOA</option>
+          <option value="gujarath">GUJARATH</option>
+          <option value="haryana">HARYANA</option>
+          <option value="himachal-pradesh">HIMACHAL-PRADESh</option>
+          <option value="jarkhand">JARKHAND</option>
+          <option value="karnataka">KARNATAKA</option>
+          <option value="kerala">KERALA</option>
+          <option value="madhya-pradesh">MADHYA-PRADESH</option>
+          <option value="manipur">MANIPUR</option>
+          <option value="meghalaya">MEGHALAYA</option>
+          <option value="mizoram">MIZORAM</option>
+          <option value="nagaland">NAGALAND</option>
+          <option value="odisa">ODISA</option>
+          <option value="punjab">PUNJAB</option>
+          <option value="rajasthan">RAJASTHAN</option>
+          <option value="sikkim">SIKKIM</option>
+          <option value="tamil-nadu">TAMILNADU</option>
+          <option value="telangana">TELANGANA</option>
+          <option value="tripura">TRIPURA</option>
+          <option value="uttarapradesh">UTTARAPRADESH</option>
+          <option value="uttarakhand">UTTARAKHAND</option>
+          <option value="west-bengal">WEST-BENGAL</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid state.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Please provide a valid zip.
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
