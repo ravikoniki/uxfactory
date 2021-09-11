@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css position property</title>
+        <style>
+            #parent{
+                background-color: aqua;
+                height: 10px;
+                width: 200px;
+                
+            }
+            #child1{
+                background-color: blue;
+                height: 100px;
+                width: 500px;
+            }
+            #child2{
+                background-color: blueviolet;
+                border: 2px chartreuse;
+                position:sticky;
+               height: 200px;
+                width: 500px;
+            }
+            #child3{
+                background-color: chartreuse;
+                height: 300px;
+                width: 600px;
+            }
+            #child4{
+                background-color:darkcyan ;
+                height: 150px;
+                width: 600px;
+            }
+            #child5{
+                background-color: crimson;
+                height: 100px;
+                width: 200px;
+            }
+            #child6{
+                background-color:darkred;
+                height: 50px;
+                width:250px;
+            }
+            #child7{
+                background-color: forestgreen;
+                height: 100px;
+                width: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="parent">
+            <div id="child1">class1
+                <div id="child6">child 6</div>
+            </div>
+            <div id="child2">child2
+                <div id="child7">child7</div>
+            </div>
+            <div id="child3">child3
+                <div id="child4">child4
+                    <div id="child5">child5</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
