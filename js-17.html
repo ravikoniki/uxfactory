@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> js type converter</title>
+    </head>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+let y = "5";
+let x = + y;
+document.getElementById("demo").innerHTML = typeof y + "<br>" + typeof x;
+let a = 123;
+document.getElementById("demo").innerHTML =
+  String(a) + "<br>" +
+  String(123) + "<br>" +
+  String(100 + 23);
+</script>
+
+</body>
+</html>

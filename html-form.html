@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>html form</title>
+    <script>
+        function validregform() {
+            var fname = document.forms["registrationform"]["firstname"].value;
+            if (fname != "" && parseInt(fname.length) <= 8) {
+                document.getElementById("fnameerror").style.display = "none";
+            }
+            else {
+                document.getElementById("fnameerror").style.display = "block";
+            }
+
+            var lname = document.forms["registrationform"]["lastname"].value;
+            if (lname != "" && parseInt(lname.length) >= 4) {
+                document.getElementById("lnameerror").style.display = "none";
+            }
+            else {
+                document.getElementById("lnameerror").style.display = "block";
+            }
+
+            var moberror = document.forms["registrationform"]["mobilenumber"].value;
+            if(/^\d[10]$/.test(moberror)) {
+                document.getElementById("mobilenumbererror").style.display = "none";
+            } else {
+                document.getElementById("mobilenumbererror").style.display = "block";
+            }
+            var male = document.forms["registrationform"]["gender"][0].checked;
+            var female = document.forms["registrationform"]["gender"][1].checked;
+            var others = document.forms["registrationform"]["gender"][2].checked;
+            if (male || female || others) {
+                document.getElementById("gendererror").style.display = "none";
+            } else {
+                document.getElementById("gendererror").style.display = "block";
+            }
+            
+            return false;
+        }
+
+    </script>
+</head>
+
+<body>
+    <form name="registrationform" action="/signin.php" method="POST" onsubmit="return validregform()">
+        <label>first name</label>
+        <input type="text" name="firstname" id="firstname" oninput="validregform()"><br>
+        <span id="fnameerror" style="color: red; display: none;">
+            please enter first name<br>
+            max length is 8 characters
+        </span>
+        <br>
+        <label>lastname</label>
+        <input type="text" name="lastname" id="lastname" oninput="validregform()"><br>
+        <span id="lnameerror" style="color: blue; display: none;">
+            please enter last name<br>
+            min length is 4 characters
+        </span>
+
+        <label>mobilenumber</label>
+        <input type="number" name="mobilenumber" id="mobilenumber" oninput="validregform()"><br>
+        <span id="mobilenumbererror" style="color: olive; display: none;">
+            please enter mobile number<br>
+            the mobile number should br 10 digits
+        </span>
+        <label>gender</label><br>
+        <input type="radio" name="gender" id="male" oninput="vaildregform()">male<br>
+        
+        <input type="radio" name="female" id="gender" oninput="validregform()">female<br>
+        <input type="radio" name="others" id="others" oninput="validregform()">others<br>
+        <span id="gendererror" style="color: aqua; display: none;">
+        please choose gender
+        </span>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>

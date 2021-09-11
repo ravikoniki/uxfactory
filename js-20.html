@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js this keyword</title>
+    </head>
+    <body>
+        <script>
+            console.log("globalThis",this);
+            function myfunction() {
+                var x=10;
+                var y=15;
+                document.write(x);
+                console.log("infunction this",this);
+            }
+            myfunction();
+            var myobj = {
+                student : "kalyan",
+                batch : "june",
+                institute :"UxFactory",
+                year :"2021",
+                studentdetails:function() {
+                    console.log("Inobject this",this);
+                    return this.student+" is in "+this.batch+" batch ";
+                }
+            }
+            var studentname=myobj.studentdetails();
+            console.log(studentname);
+           /*  window.open("http:/www.sakshi.com/"); */
+            window.close();
+        </script>
+    </body>
+</html>

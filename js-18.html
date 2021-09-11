@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript String Methods</h2>
+
+    <p>Search a string for UxFactory, and display the position of the match:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        var text = "Search a string for UxFactory, and display the position of the matchVisit UxFactory! Search a string for UxFactory, and display the position of the matchSearch a string for UxFactory, and display the position of the matchSearch a string for UxFactory, and display the position of the matchSearch a string for UxFactory, and display the position of the matchSearch a string for UxFactory, and display the position of the match";
+        var n = text.search("UxFactory");
+        text.replace(/UxFactory/gi,"Microsoft");
+        document.getElementById("demo").innerHTML = n;
+    </script>
+
+</body>
+
+</html>

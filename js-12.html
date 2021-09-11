@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>the sqares of number</title>
+    </head>
+    <body>
+        <input type="number" value=" " id="number"><br> 
+        
+        <input type="submit" value="submit" onclick="return myfun()">
+        
+        <script>
+           function myfun(){
+                var a=document.getElementById('number').value;
+               
+                document.write('the sqaures of numbers are in increasing order<br>');
+                for(var i=1;i<=a;i++){
+                    result=i*i;
+                    document.write('the square of '+i+' ='+result+'<br>');
+                }
+               
+                }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>multipication table</title>
+    </head>
+    <body>
+        <input type="number" value=" " id="number-1"><br> 
+        <input type="number" value=" " id="number-2"><br>
+        <input type="submit" value="submit" onclick="return myfun()">
+        
+        <script>
+           function myfun(){
+                var a=document.getElementById('number-1').value;
+                var b=document.getElementById('number-2').value;
+                document.write('the multiplication table is in increasing order<br>');
+                for(var i=1;i<=b;i++){
+                    result=a*i;
+                    document.write(a+'*'+i+'='+result+'<br>');
+                }
+                document.write('the multiplication table is in decreasing order<br>');
+                for(var j=b;j>=1;j--){
+                    result1 =a*j;
+                    document.write(a+'*'+j+'='+result1+'<br>');
+
+                }
+
+            }
+        </script>
+    </body>
+</html>
